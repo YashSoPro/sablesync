@@ -184,14 +184,14 @@ export default function LoginPage() {
 
             {/* Forgot Password */}
             <div className="flex justify-end -mt-2">
-              
-                href="#"
-                className="text-xs font-medium"
-                style={{ color: 'var(--purple)' }}
-              >
-                Forgot password?
-              </a>
-            </div>
+             <a
+           href="#"
+           className="text-xs font-medium"
+         style={{ color: 'var(--purple)' }}
+         >
+       Forgot password?
+        </a>
+        </div>
 
             {/* Submit Error */}
             {submitError && (
