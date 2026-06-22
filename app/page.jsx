@@ -87,18 +87,18 @@ function NavBar({ scrolled }) {
           <span className="font-bold text-lg gradient-text">SableSync</span>
         </div>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {['Features', 'Community', 'Changelog'].map(item => (
-            
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-sable-muted hover:text-sable-text text-sm font-medium transition-colors"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
+      {/* Desktop Nav */}
+<div className="hidden md:flex items-center gap-8">
+  {['Features', 'Community', 'Changelog'].map(item => (
+    <a
+      key={item}
+      href={`#${item.toLowerCase()}`}
+      className="text-sable-muted hover:text-sable-text text-sm font-medium transition-colors"
+    >
+      {item}
+    </a>
+  ))}
+</div>
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
@@ -126,16 +126,16 @@ function NavBar({ scrolled }) {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden glass border-t border-sable-border px-6 py-4 flex flex-col gap-4"
         >
-          {['Features', 'Community', 'Changelog'].map(item => (
-            
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-sable-muted hover:text-sable-text text-sm font-medium"
-              onClick={() => setMobileOpen(false)}
-            >
-              {item}
-            </a>
-          ))}
+        {['Features', 'Community', 'Changelog'].map(item => (
+  <a
+    key={item}
+    href={`#${item.toLowerCase()}`}
+    className="text-sable-muted hover:text-sable-text text-sm font-medium"
+    onClick={() => setMobileOpen(false)}
+  >
+    {item}
+  </a>
+))}
           <div className="flex flex-col gap-2 pt-2 border-t border-sable-border">
             <Link href="/login"    className="btn btn-ghost  text-sm">Log in</Link>
             <Link href="/register" className="btn btn-primary text-sm">Get Started</Link>
