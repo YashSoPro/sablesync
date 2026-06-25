@@ -111,8 +111,8 @@ export default function LoginPage() {
 
   return (
     <div
-      className="min-h-screen flex-center relative overflow-hidden"
-      style={{ background: 'var(--bg)' }}
+      className="min-h-screen w-full flex items-center justify-center relative overflow-hidden"
+style={{ background: 'var(--bg)', minHeight: '100vh' }}
     >
       {/* Background Glows */}
       <div
